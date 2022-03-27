@@ -1,6 +1,6 @@
 import cv2
 
-# Read demo.jpg in unchange mode
+# Read demo.jpg in original mode
 img = cv2.imread('demo.png', -1)
 
 # Show the image in new window
@@ -14,5 +14,5 @@ if k == 27:
     cv2.destroyAllWindows()
 # Else if key is 's', write the image to a new file then close all windows
 elif k == ord('s'):
-  cv2.imwrite('demo_copy.png', img)
-  cv2.destroyAllWindows()
+    cv2.imwrite('demo_copy.png', img)
+    cv2.destroyAllWindows()
