@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Read the image in grayscale
-img = cv2.imread('z.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('./asset/z.jpg', cv2.IMREAD_GRAYSCALE)
 # Create a mask from image
 _, mask = cv2.threshold(img, 220, 255, cv2.THRESH_BINARY_INV)
 

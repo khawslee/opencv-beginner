@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Read the image in grayscale mode
-img = cv2.imread('tennis.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('./asset/tennis.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Laplacian gradient method
 lap = cv2.Laplacian(img, cv2.CV_64F, ksize=3)

@@ -8,7 +8,7 @@ img1 = np.zeros((250, 500, 3), np.uint8)
 img1 = cv2.rectangle(img1, (200, 0), (300, 100), (255, 255, 255), -1)
 
 # Read blackwhite image
-img2 = cv2.imread("blackwhite.jpg")
+img2 = cv2.imread("./asset/blackwhite.jpg")
 
 # Bitwise AND img2 and img1
 bitAnd = cv2.bitwise_and(img2, img1)

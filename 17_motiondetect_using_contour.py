@@ -1,7 +1,7 @@
 import cv2
 
 # Open video file
-cap = cv2.VideoCapture('video_1.mp4')
+cap = cv2.VideoCapture('./asset/video_1.mp4')
 
 # Read 1st frame of video into frame 1 and 2
 ret, frame1 = cap.read()

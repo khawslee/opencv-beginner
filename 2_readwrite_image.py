@@ -1,7 +1,7 @@
 import cv2
 
 # Read demo.jpg in original mode
-img = cv2.imread('demo.jpg', -1)
+img = cv2.imread('./asset/demo.jpg', -1)
 
 # Show the image in new window
 cv2.imshow('image', img)

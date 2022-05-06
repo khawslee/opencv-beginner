@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 # Read image file
-img = cv2.imread('ronaldo.jpg')
+img = cv2.imread('./asset/ronaldo.jpg')
 # Convert img to grayscale
 grey_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Read template image
-template = cv2.imread('ball.jpg', 0)
+template = cv2.imread('./asset/ball.jpg', 0)
 # Define the width and height of template image
 w, h = template.shape[::-1]
 

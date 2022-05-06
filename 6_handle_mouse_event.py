@@ -25,7 +25,7 @@ def click_event(event, x, y, flags, param):
 
 
 # Load demo image
-img = cv2.imread('tennis.jpg')
+img = cv2.imread('./asset/tennis.jpg')
 
 # Show the image
 cv2.imshow('frame', img)

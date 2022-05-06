@@ -2,8 +2,8 @@ import numpy as np
 import cv2
 
 # Read demo.jpg in original mode
-img = cv2.imread('tennis.jpg')
-img2 = cv2.imread('opencv-logo.png')
+img = cv2.imread('./asset/tennis.jpg')
+img2 = cv2.imread('./asset/opencv-logo.png')
 
 # Split image into 3 color channel
 b, g, r = cv2.split(img)

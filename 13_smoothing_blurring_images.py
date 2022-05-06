@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Read the image
-img = cv2.imread('girl1.png')
+img = cv2.imread('./asset/girl1.png')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # Define kernel to 5x5 size

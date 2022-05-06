@@ -1,7 +1,7 @@
 import cv2
 
 # Read shapes.jpg in original mode
-img = cv2.imread('shapes.jpg')
+img = cv2.imread('./asset/shapes.jpg')
 # Convert the image to grayscale
 imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

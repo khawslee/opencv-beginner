@@ -2,8 +2,8 @@ import numpy as np
 import cv2
 
 # Read demo.jpg in original mode
-apple = cv2.imread('apple.png')
-orange = cv2.imread('orange.png')
+apple = cv2.imread('./asset/apple.png')
+orange = cv2.imread('./asset/orange.png')
 
 apple_orange = np.hstack((apple[:, :256], orange[:, 256:]))
 
