@@ -7,7 +7,9 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 cap = cv2.VideoCapture('./asset/obama.mp4')
 
 while cap.isOpened():
-    _, img = cap.read()
+    ret, img = cap.read()
+    if not ret:
+        break
     # Read face image and convert it to grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Detect face using grayscale image
