@@ -1,5 +1,4 @@
 import cv2
-import numpy
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -9,7 +8,7 @@ img = cv2.imread('./asset/z.jpg', cv2.IMREAD_GRAYSCALE)
 _, mask = cv2.threshold(img, 220, 255, cv2.THRESH_BINARY_INV)
 
 # Define kernel to 2x2 size
-kernel = numpy.ones((2,2), np.uint8)
+kernel = np.ones((2,2), np.uint8)
 
 # Dilation increase the area of mask
 dilation = cv2.dilate(mask, kernel, iterations=2)
